@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <style>
+    canvas{
+        border: 1px solid gold;
+    }
+    body{
+        background-image:url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg);
+    }
+    
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+       <div> 
+           
+        <form>
+            <div class="form-group">
+                <label  for="radius" style="color: gold;">enter the radius</label>
+                <input type="text" class="form-control" id="radius"  placeholder="your radius here" onblur="checkthis()">
+            </div>
+
+            <div class="form-group">
+                <span>
+                    <label for="volume" style="color: gold;">your volume is here</label>
+                <input type="text" class="form-control" id="volume" placeholder="your volume will be here"></span>
+            </div>
+
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-primary" onclick="volume_sphere()" >Submit</button>
+            </div>
+
+        </form>
+        
+          <canvas id="output" width="500" height="500"></canvas>
+          <button type="button" class="btn btn-warning btn-lg" onclick="cleanup()">clean up</button>
+        </div>
+          
+
+
+
+
+   
+
+
+    
+    
+    
+    
+    <script src="script/js.js"></script>
+</body>
+</html>
